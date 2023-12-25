@@ -15,4 +15,4 @@
 
 
 
-<img height="500" src="/Users/anandc/Desktop/Screenshot 2023-12-25 at 1.23.18 PM.png" title="Authorization Code flow" width="1000"/>
+![alt text](https://github.com/anandchouadhary854/Spring-security-oauth/blob/main/authCodeFlow.png?raw=true)
