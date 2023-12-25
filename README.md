@@ -15,4 +15,4 @@
 
 
 
-![alt text](https://github.com/anandchouadhary854/Spring-security-oauth/blob/main/authCodeFlow.png?raw=true)
+![alt text](https://github.com/anandchaudhary854/spring-security-oauth/blob/main/authCodeFlow.png)
