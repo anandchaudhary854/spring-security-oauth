@@ -99,7 +99,7 @@ public class SecurityConfig {
                 .authorizationGrantType(AuthorizationGrantType.CLIENT_CREDENTIALS)
                 .authorizationGrantType(AuthorizationGrantType.AUTHORIZATION_CODE)
                 .authorizationGrantType(AuthorizationGrantType.REFRESH_TOKEN)
-                .redirectUri("http://127.0.0.1:8082/login/oauth2/code/spring")
+                .redirectUri("http://localhost:8082/login/oauth2/code/spring")
                 .scopes(scopes -> scopes.addAll(Set.of("user.read", "user.write", OidcScopes.OPENID, OidcScopes.PROFILE)))
                 .clientSettings(ClientSettings.builder().requireAuthorizationConsent(true).build())
                 .build();
