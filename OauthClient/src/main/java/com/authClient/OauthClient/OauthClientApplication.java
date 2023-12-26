@@ -20,6 +20,11 @@ public class OauthClientApplication {
 				.route(r->r.path("/hello")
 								.filters(GatewayFilterSpec::tokenRelay)
 								.uri("http://localhost:8081/hello"))
+				.route(r->r.path("/userInfo")
+						.filters(GatewayFilterSpec::tokenRelay)
+						.uri("http://localhost:9000/userInfo"))
+				.route(r->r.path("/authServer/create")
+						.uri("http://localhost:9000/authServer/create"))
 				.build();
 	}
 
