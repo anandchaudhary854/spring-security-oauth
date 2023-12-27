@@ -5,6 +5,8 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.oauth2.jwt.JwtDecoder;
+import org.springframework.security.oauth2.jwt.JwtDecoders;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
@@ -23,7 +25,7 @@ public class SecurityConfig {
             CorsConfigurationSource source = s -> {
                 CorsConfiguration cc = new CorsConfiguration();
                 cc.setAllowCredentials(true);
-                cc.setAllowedOrigins(List.of("*"));
+                cc.setAllowedOrigins(List.of("http://127.0.0.1:3000", "http://localhost:3000", "http://localhost:3000/"));
                 cc.setAllowedHeaders(List.of("*"));
                 cc.setAllowedMethods(List.of("*"));
                 return cc;
