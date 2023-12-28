@@ -26,12 +26,12 @@ public class UserInfoController {
     public String index(Principal principal){
         return "logged in  user?";
     }
-    @GetMapping("/userInfo")
+    @GetMapping("/api/userInfo")
     public List<User> getUserInfo(){
         return userRepo.findAll();
     }
 
-    @PostMapping("/authServer/create")
+    @PostMapping("/api/authServer/create")
     public User registerUser(@RequestBody RegisterDto registerDto){
         return authService.registerUser(registerDto.getUsername(), registerDto.getPassword());
     }
